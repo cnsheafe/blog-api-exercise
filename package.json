@@ -4,7 +4,7 @@
   "description": "Server-side exercise to imitate blog behavior.",
   "main": "model.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test" 
   },
   "author": "Christofer Sheafe",
   "license": "ISC",
@@ -13,5 +13,10 @@
     "express": "^4.15.2",
     "morgan": "^1.8.1",
     "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0"
   }
 }

@@ -14,8 +14,16 @@ BlogPosts.create(
 );
 
 
-router.get('/',function(req, res){
-	res.status(200).json(BlogPosts.get());
+router.get('/',(req, res) => res.status(200).json(BlogPosts.get()) );
+
+router.get('/:id', function (req, res) {
+	const post = BlogPosts.get(req.params.id);
+	if( post.constructor === Array ) {
+		const msg = `Blog post with id:${req.params.id} does not exist`;
+		console.info(msg);
+		return res.status(404).send(msg);
+	}
+	return res.status(200).json(post);
 });
 
 router.post('/', jsonParser, function(req, res) {
@@ -31,7 +39,7 @@ router.post('/', jsonParser, function(req, res) {
 	}
 	let date = null;
 	if (typeof req.body.publishDate !== 'undefined') {
-		date = req.body.publishDate
+		date = req.body.publishDate;
 	}
 
 	const post = BlogPosts.create(req.body.title, req.body.content, req.body.author, date);
@@ -52,7 +60,7 @@ router.put('/:id', jsonParser, function(req, res) {
 	for (let i = 0; i < BlogPosts.posts.length; i++) {
 		if(req.params.id === BlogPosts.posts[i].id) {
 			break;
-		
+
 		}
 		else {
 			const msg = `${req.params.id} does not exist`;
