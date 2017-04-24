@@ -4,6 +4,6 @@ deploy:
   provider: heroku
   api_key:
     secure: ofLHSMkpzfvt1/RLbJkoWEqqvJSfp3TjoS9agaqAwuHBh9eXPpY8DI+7t7NHAR24Ubg1sbIQUJchAaGi4VTSIOng5tw9R9g4bts/qiuvfaxlrSpoQznO/RsMo9mstbdNilyac+Zr4rbJVgexCHUMSC847xl9oKImkX9h/dZa448QkGW5hgaxiFlETBdQ+vnTMXc0p3hSX6OL1iYUp9YVVW7lpvYzQXMxsV/Zkp0G2dqas+bTIqnC5htXjhN3wkNkbklhztHKbZW5tkexoTKlhXeGZBqRn0351xl3zAw2BUkL85zpttasuHLJkn/XIxaMnlemwMjyb/WD0WUkSJYmkPcLbzFeuqMthjoRPi/JDTNvPkN2KpKCemPdiIy10jIsdoxw955De6YYMyPLfTwE3oCKY1e673yacMSfYnU0+D3U7na1tpqbf5yfTJtz5z8OkfYcg0+5x8BVo1iSoJ0EZ2dGTNjqn7TVdPwlrypX29XeuF8V7gCsra5YsNxPPiHqQTVyNifyPNvAL+ftenmd3uWQ0JsLF3i0981hVtd0zKZOUhlPO4YWYJmG05BTi8Qox5D98VTJinrRa10W0zPAoNlmhv0heMMk3vqcM7+VJLSQqOA0Ll5jI0AKf4HiG2QZlCOdtWhj6DyNoQyN4fU73VsGQWIk2MYD0/ajz2+q9Uk=
-  app: https://fierce-harbor-28964.herokuapp.com/ 
+  app: https://fierce-harbor-28964.herokuapp.com/blog-posts 
   on:
     repo: cnsheafe/blog-api-exercise
